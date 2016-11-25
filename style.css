@@ -38,6 +38,6 @@ em {
 
 /* Ë«À¸ÏÔÊ¾ */
 .result:nth-child(odd) {
-    position: absolute;
+    position: absolute !important;
     right: 600px;
 }
