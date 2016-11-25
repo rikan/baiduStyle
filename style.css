@@ -1,12 +1,15 @@
+/* 背景图 */
 .s-skin-container {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5) 43px, rgba(255, 255, 255, 0.4) 92px, rgba(255, 255, 255, 0.3) 146px, rgba(255, 255, 255, 0.2) 210px, rgba(255, 255, 255, 0.1) 295px, rgba(255, 255, 255, 0) 500px), url(https://unsplash.it/1920/1080/?random)!important;
-    height: 100%!important;
-    background-position: center!important;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5) 43px, rgba(255, 255, 255, 0.4) 92px, rgba(255, 255, 255, 0.3) 146px, rgba(255, 255, 255, 0.2) 210px, rgba(255, 255, 255, 0.1) 295px, rgba(255, 255, 255, 0) 500px), url(https://unsplash.it/1920/1080/?random) !important;
+    height: 100% !important;
+    background-position: center !important;
     /*background-size: cover;*/
-    
+
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+/* 隐藏logo, button, 右侧广告 */
 #s_lg_img,
 #bottom_container,
 #content_right,
@@ -15,11 +18,26 @@
 #s_btn_wr {
     display: none !important;
 }
+
+/* 隐藏结果下方广告 */
 #content_left > div:not([class*=result]) {
     display: none !important;
     position: absolute;
     left: -8888px;
 }
+
 #s_tab b {
     color: orange;
+}
+
+/* 去除下划线 */
+a,
+em {
+    text-decoration: none !important;
+}
+
+/* 双栏显示 */
+.result:nth-child(odd) {
+    position: absolute;
+    right: 600px;
 }
