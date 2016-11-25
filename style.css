@@ -41,3 +41,8 @@ em {
     position: absolute !important;
     right: 600px;
 }
+
+/* È¥³ýfoot */
+#foot {
+    display: none !important;
+}
